@@ -14,16 +14,18 @@ sudo pacman -S --needed --noconfirm swww fastfetch blueman bluez bluez-utils bri
 yay -S --noconfirm eww flat-remix-gtk spicetify-cli sddm-silent-theme
 
 #instalacion de oh-my-zsh
-if [ ! -d "$HOME/.oh-my-zsh"]; then
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 mkdir -p ~/Wallpapers
 
 #instalacion de los dotfiles
-cp -rv config/* ~/.config/
+basedir=$(dirname "$(readlink -f "$0")")
+
+cp -rv "$basedir/config/*" ~/.config/
 cp .zshrc ~/
-cp -rv Wallpapers/* ~/Wallpapers/
+cp -rv "$basedir/Wallpapers/*" ~/Wallpapers/
 
 read -p "Quieres Reiniciar ahora? (y/n)" confirm
 if [[ $confirm == [yY] ]]; then
