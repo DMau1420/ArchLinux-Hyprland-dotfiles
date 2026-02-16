@@ -53,3 +53,81 @@ inputbar {
     text-color:                  @foreground-colour;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
+
+prompt {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+
+textbox-prompt-colon {
+    enabled:                     true;
+    padding:                     5px 0px;
+    expand:                      false;
+    str:                         "";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    padding:                     5px 0px;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           inherit;
+}
+num-filtered-rows {
+    enabled:                     true;
+    expand:                      false;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+textbox-num-sep {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "/";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+num-rows {
+    enabled:                     true;
+    expand:                      false;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+case-indicator {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     5px;
+    margin:                      0px;
+    padding:                     10px;
+    border:                      0px 2px 2px 2px ;
+    border-radius:               0px 0px 10px 10px;
+    border-color:                #555889;
+    background-color:            transparent;
+    text-color:                  #a52d48;
+    cursor:                      "default";
+}
+
+scrollbar {
+    handle-width:                5px ;
+    handle-color:                #4356fa;
+    border-radius:               10px;
+    background-color:            #12eb54;
+}

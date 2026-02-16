@@ -10,7 +10,7 @@
 			"custom/launcher", 
 			"hyprland/workspaces",
 			"group/group-power",
-			"image"
+			"image",
 	],
 	"modules-center": [
 			"custom/mediaplayer", 
@@ -25,6 +25,7 @@
 			"cpu", 
 			"memory", 
 			"battery", 
+			"hyprland/language",
 			"clock"
 	],
 
@@ -131,5 +132,11 @@
 		"path": "/tmp/cover.jpeg",
 		"size": 32,
 		"interval": 5,
+	},
+
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "us",
+		"format-es": "es"
 	}
 }

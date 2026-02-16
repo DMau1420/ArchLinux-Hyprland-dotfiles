@@ -15,3 +15,5 @@ cp -r ~/.config/wofi $destino
 
 cp -r ~/Wallpapers ~/dotfiles
 cp ~/.zshrc ~/dotfiles
+
+cp -r ~/.icons/* ~/dotfiles/icons

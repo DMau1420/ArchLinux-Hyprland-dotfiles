@@ -16,7 +16,7 @@ window#waybar {
 
 #custom-launcher, #workspaces, #custom-mediaplayer, #custom-previous, 
 #custom-reproducir, #custom-next, #backlight, #wireplumber, 
-#tray, #cpu, #memory, #battery, #clock {
+#tray, #cpu, #memory, #battery, #clock, #language{
 	background-color: @obsidian-bg;
 	margin: 3px 3px;
 	padding: 0 8px;
