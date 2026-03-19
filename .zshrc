@@ -144,3 +144,7 @@ alias ls='eza --icons=always --group-directories-first'
 alias ll='eza -lh --icons=always --group-directories-first'
 alias la='eza -a --icons=always --group-directories-first'
 alias tree='eza --tree --icons=always'
+
+
+# Load Angular CLI autocompletion.
+#source <(ng completion script)

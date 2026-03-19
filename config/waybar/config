@@ -9,7 +9,6 @@
 	"modules-left": [
 			"custom/launcher", 
 			"hyprland/workspaces",
-			"group/group-power",
 			"image",
 	],
 	"modules-center": [
@@ -25,8 +24,8 @@
 			"cpu", 
 			"memory", 
 			"battery", 
+			"clock",
 			"hyprland/language",
-			"clock"
 	],
 
 	//modules definition
@@ -62,8 +61,10 @@
 	},
 
 	"clock": {
-        	"format": "{:%a %b %d, %I:%M %p}",
-		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        	"format": "{:%I:%M %p}",
+		"tooltip": false,
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"on-click": "~/.config/eww/scripts/calendar_toggle.sh"
 	},
 
 	"battery": {
