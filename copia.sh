@@ -1,7 +1,6 @@
 #!/bin/bash
 destino=~/dotfiles/config
 
-cp -r ~/.config/eww $destino
 cp -r ~/.config/fastfetch $destino
 cp -r ~/.config/hypr $destino
 cp -r ~/.config/kitty $destino
