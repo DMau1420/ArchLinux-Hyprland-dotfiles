@@ -1,9 +1,9 @@
 /**
  * ROFI Layout 
  *
- * Style 4: Header with a background image and a list extending to the right.
+ * Style 11: Diagonal background split with modes or a list.
  * Attribute: rofilaunch,launcher
- * User: The HyDE Project [ TopPanel ]
+ * User: The HyDE Project [ DiagonalSplit ]
  * Copyright: https://github.com/prasanthrangan/hyprdots/
  */
 
@@ -12,91 +12,73 @@
 configuration {
     modi:                        "drun,filebrowser,window,run";
     show-icons:                  true;
-    display-drun:                " ";
-    display-run:                 " ";
-    display-filebrowser:         " ";
-    display-window:              " ";
+    display-drun:                " ";
+    display-run:                 " ";
+    display-filebrowser:         " ";
+    display-window:              " ";
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
-    font:                        "FiraCode Nerd Font 11";
+    font:                        "FiraCode Nerd Font 10";
     icon-theme:                  "Adwaita";
 }
 
 @theme "~/.config/rofi/theme.rasi"
 
+
 // Main //
 window {
-    height:                      450px;
-    width:                       750px;
+    height:                      30em;
+    width:                       58em;
     transparency:                "real";
     fullscreen:                  false;
     enabled:                     true;
     cursor:                      "default";
-    spacing:                     0px;
-    padding:                     0px;
+    spacing:                     0em;
+    padding:                     0em;
     border-color:                @main-br;
-    background-color:            @main-bg;
-    border: 4px;
-    border-radius: 20px;
+    background-color:            transparent;
 }
 mainbox {
     enabled:                     true;
-    spacing:                     0px;
-    padding:                     0px;
+    spacing:                     0em;
+    padding:                     0.8em;
     orientation:                 horizontal;
-    children:                    [ "inputbar" , "mode-switcher" , "listbox" ];
-    background-color:            transparent;
-    background-image:            url("/tmp/wallpaper_actual", height);
+    children:                    [ "inputbar" , "listbox" ];
+    background-color:            #00000003;
 }
+
 
 // Inputs //
 inputbar {
     enabled:                     true;
-    width:                       250px;
+    width:                       28.5em;
+    spacing:                     0em;
+    padding:                     0em;
     children:                    [ "entry" ];
-    background-color:            transparent;
-    background-image:            url("/tmp/wallpaper_actual", height);
+    expand:                      false;
+    background-color:            @main-bg;
+    background-image:            url("/tmp/wallpaper_actual.png", width);
+    border-radius:               1em 0em 0em 1em;
 }
 entry {
     enabled:                     false;
 }
 
 
-// Modes //
-mode-switcher{
-    orientation:                 vertical;
-    enabled:                     true;
-    width:                       95px;
-    spacing:                     15px;
-    padding:                     50px 10px 50px 10px;
-    background-color:            transparent;
-    font-size: 20px;
-}
-button {
-    cursor:                      pointer;
-    border-radius:               100%;
-    background-color:            @main-bg;
-    text-color:                  @main-fg;
-}
-button selected {
-    background-color:            @select-bg;
-    text-color:                  @select-fg;
-}
-
-
 // Lists //
 listbox {
-    spacing:                     0px;
-    padding:                     8px;
+    spacing:                     0em;
+    padding:                     0em;
     children:                    [ "dummy" , "listview" , "dummy" ];
-    background-color:            transparent;
+    background-color:            @main-bg;
+    border-radius:               0em 1em 1em 0em;
 }
 listview {
-    spacing:                     0px;
-    padding:                     24px;
     enabled:                     true;
+    spacing:                     0em;
+    padding:                     1em 2em 1em 2em;
     columns:                     1;
-    lines:                       7;
+    lines:                       8;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
@@ -106,9 +88,8 @@ listview {
     fixed-height:                true;
     fixed-columns:               true;
     cursor:                      "default";
-    background-color:            @main-bg;
+    background-color:            transparent;
     text-color:                  @main-fg;
-    border-radius:               20px;
 }
 dummy {
     background-color:            transparent;
@@ -118,8 +99,8 @@ dummy {
 // Elements //
 element {
     enabled:                     true;
-    spacing:                     8px;
-    padding:                     6px;
+    spacing:                     1em;
+    padding:                     0.5em 0.5em 0.5em 1.5em;
     cursor:                      pointer;
     background-color:            transparent;
     text-color:                  @main-fg;
@@ -127,10 +108,9 @@ element {
 element selected.normal {
     background-color:            @select-bg;
     text-color:                  @select-fg;
-    border-radius: 15px;
 }
 element-icon {
-    size:                        40px;
+    size:                        2.2em;
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;

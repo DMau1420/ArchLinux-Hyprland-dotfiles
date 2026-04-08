@@ -1,0 +1,10 @@
+* {
+	main-bg: 	{{ colors.background.dark.hex }}d9;
+	main-fg:	{{ colors.on_background.dark.hex }};
+	main-br:	{{ colors.primary_container.dark.hex }};
+	main-ex:	{{ colors.source_color.dark.hex }};
+	select-bg: 	{{ colors.primary.dark.hex }};
+	select-fg:	{{ colors.on_primary.dark.hex }};
+	separatorcolor:	transparent;
+	border-color:	transparent;
+}

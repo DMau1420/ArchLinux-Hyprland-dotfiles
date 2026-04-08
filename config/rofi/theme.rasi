@@ -1,16 +1,10 @@
 * {
-    bg:          #1e1e2e;
-    bg-alt:      #313244;
-    fg:          #cdd6f4;
-    acheron:     #8c8bc2;   /* Lila de Acheron */
-    changli:     #f93b35;   /* Rojo de Changli */
-    selected:    @acheron;
-    active:      @changli;
-
-    background-color: @bg;
-    text-color:       @fg;
-    border:           0;
-    margin:           0;
-    padding:          0;
-    spacing:          0;
+	main-bg: 	#0c141bd9;
+	main-fg:	#dbe3ed;
+	main-br:	#004b72;
+	main-ex:	#bddaf6;
+	select-bg: 	#91cdff;
+	select-fg:	#003350;
+	separatorcolor:	transparent;
+	border-color:	transparent;
 }

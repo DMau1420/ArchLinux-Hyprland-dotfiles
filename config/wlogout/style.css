@@ -1,0 +1,87 @@
+* {
+	background-image: none;
+	font-family: "FiraCode Nerd Font 10"
+}
+
+window {
+	background-color: rgba(12, 12, 12, 0.9);
+}
+
+button {
+	color: #4086d5;
+	font-size: 16px;
+	border-width: 0px;
+    	border-radius: 0;
+	background-color: rgba(30, 30, 46, 0.85);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20%;
+	animation: gradient_f 20s ease-in infinite;
+}
+
+button:hover, button:focus{
+	color: #ff92c4;
+	background-color: rgba(30, 112, 133, 0.5);
+	background-size: 30%;
+	border-radius: 20%;
+	animation: gradient_f 20s ease-in infinite;
+    	transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+}
+
+button:hover#lock, button:focus#lock, button:hover#logout, button:focus#logout, 
+button:hover#hibernate, button:focus#hibernate, button:hover#reboot, button:focus#reboot {
+    	border-radius: 15px;
+	margin: -18px 0px;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+button:hover#suspend, button:focus#suspend {
+    	border-radius: 15px;
+    	margin: -18px -4px -18px 0px;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+button:hover#shutdown, button:focus#shutdown {
+    	border-radius: 15px;
+    	margin: -18px 0px -18px -4px;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+#shutdown {
+    	background-image: url("icons/shutdown_white.png");
+    	border-radius: 25% 0px 0px 25%;
+    	margin: 2px 0px 2px 2px;
+}
+
+#reboot {
+    	background-image: url("icons/reboot_white.png");
+	border-radius: 2px 0px 0px 0px;
+	margin : 2px 0px 2px 0px;
+}
+
+#lock {
+    	background-image: url("icons/lock_white.png");
+	border-radius: 0px 0px 0px 0px;
+	margin : 2px 0px 2px 0px;
+}
+
+#logout {
+    	background-image: url("icons/logout_white.png");
+	border-radius: 0px 0px 0px 0px;
+	margin : 2px 0px 2px 0px;
+}
+
+#hibernate {
+    	background-image: url("icons/hibernate_white.png");
+	border-radius: 0px 0px 0px 0px;
+	margin : 2px 0px 2px 0px;
+}
+
+#suspend {
+    	background-image: url("icons/suspend_white.png");
+    	border-radius: 0px 25% 25% 0px;
+    	margin: 2px 2px 2px 0px;
+}

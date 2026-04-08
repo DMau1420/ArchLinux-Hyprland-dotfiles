@@ -1,0 +1,11 @@
+/*
+* Css Colors
+* Generated with Matugen
+*/
+@define-color main-background	rgba(30, 30, 46, 0.85);
+@define-color foreground	#4086d5;
+
+
+<* for name, value in colors *>
+@define-color {{name}} {{value.default.hex}};
+<* endfor *>
