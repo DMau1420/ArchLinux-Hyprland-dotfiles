@@ -1,11 +1,14 @@
 /*
-* Css Colors
-* Generated with Matugen
+* Generated with Matugen - Based on Rofi Theme logic
 */
-@define-color main-background	rgba(30, 30, 46, 0.85);
-@define-color foreground	#4086d5;
 
+@define-color main-background {{ colors.background.dark.hex }}d9;
+@define-color foreground {{ colors.on_background.dark.hex }};
+@define-color primary {{ colors.primary.dark.hex }};
+@define-color select-bg {{ colors.primary.dark.hex }};
+@define-color select-fg {{ colors.on_primary.dark.hex }};
+@define-color main-br {{ colors.primary_container.dark.hex }};
 
 <* for name, value in colors *>
-@define-color {{name}} {{value.default.hex}};
+@define-color {{name}} {{value.dark.hex}};
 <* endfor *>

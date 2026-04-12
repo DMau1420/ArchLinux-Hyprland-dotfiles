@@ -53,7 +53,7 @@ PanelWindow {
 
         model: folderModel
         orientation: ListView.Horizontal
-        spacing: 4
+        spacing: 8
         clip: true
         // reuseItems: true
         cacheBuffer: width * 2
@@ -165,7 +165,7 @@ PanelWindow {
                     }
                 }
             }
-            Rectangle {
+	    Rectangle {
                 id: border
                 z: 10
                 visible: parent.active
@@ -209,22 +209,22 @@ PanelWindow {
             const step = 1
             const big = configs.number_of_pictures
 
-            if (event.key === Qt.Key_J) {
+            if (event.key === Qt.Key_Right) {
                 anim.v = main.speed
                 selectedIndex = clampIndex(selectedIndex + step)
                 ensureVisibleAnimated(selectedIndex)
 
-            } else if (event.key === Qt.Key_K) {
+            } else if (event.key === Qt.Key_Left) {
                 anim.v = main.speed
                 selectedIndex = clampIndex(selectedIndex - step)
                 ensureVisibleAnimated(selectedIndex)
 
-            } else if (event.key === Qt.Key_D) {
+            } else if (event.key === Qt.Key_Down) {
                 anim.v = main.speed * big
                 selectedIndex = clampIndex(selectedIndex + big)
                 ensureVisibleAnimated(selectedIndex)
 
-            } else if (event.key === Qt.Key_U) {
+            } else if (event.key === Qt.Key_Up) {
                 anim.v = main.speed * big
                 selectedIndex = clampIndex(selectedIndex - big)
                 ensureVisibleAnimated(selectedIndex)

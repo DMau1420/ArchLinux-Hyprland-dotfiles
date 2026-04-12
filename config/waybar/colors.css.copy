@@ -1,11 +1,9 @@
-/*
- * Generador con matugen para waybar
-*/
+/* Paleta Maulinux - Single Source of Truth */
 
-@define-color obsidian-bg rgba(18, 19, 28, 0.85);
-@define-color obsidian-menu rgba(18, 19, 28, 0.95);
-@define-color obsidian-tooltip rgba(18, 19, 28, 0.60);
-
+/* Fondos y Estructura */
+@define-color obsidian-bg      rgba(30, 30, 46, 0.85); /* Fondo de las islas */
+@define-color obsidian-menu    rgba(30, 30, 46, 0.95); /* Fondo del menú XML */
+@define-color obsidian-tooltip rgba(30, 30, 46, 0.6);  /* Fondo de tooltips */
 @define-color cristal-border   rgba(255, 255, 255, 0.1);/* Bordes finos */
 
 /* Colores de Marca y UI */

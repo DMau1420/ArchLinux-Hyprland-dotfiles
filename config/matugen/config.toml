@@ -12,19 +12,23 @@ input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/swaync/colors.css'
 post_hook = 'swaync-client -R -rs'
 
-[templates.kitty]
-input_path = '~/.config/matugen/templates/kitty.conf'
-output_path = '~/.config/kitty/current-theme.config'
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi.rasi'
+output_path = '~/.config/rofi/theme.rasi'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill waybar && waybar > /dev/null 2>&1 &'
 
 [templates.spicetify]
 input_path = '~/.config/matugen/templates/spicetify.ini'
 output_path = '~/.config/matugen/colors/spicetify.ini'
 
-[templates.sway]
-input_path = '~/.config/matugen/templates/sway.conf'
-output_path = '~/.config/matugen/colors/sway.conf'
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty.conf'
+output_path = '~/.config/kitty/current-theme.conf'
 
-[templates.rofi]
-input_path = '~/.config/matugen/templates/rofi.rasi'
-output_path = '~/.config/rofi/theme.rasi'
-
+[templates.wallselector]
+input_path = '~/.config/matugen/templates/wall_selector.json'
+output_path = '~/.config/quickshell/config.json'

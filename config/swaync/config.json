@@ -30,7 +30,7 @@
     "fit-to-screen": false,
     "keyboard-shortcuts": true,
     "image-visibility": "when-available",
-    "transition-time": 200,
+    "transition-time": 0,
     "hide-on-clear": false,
     "hide-on-action": true,
     "text-empty": "Nada por aqui :D",
@@ -43,7 +43,6 @@
         }
     },
     "widgets": [
-        "buttons-grid",
         "mpris",
         "volume",
         "backlight",

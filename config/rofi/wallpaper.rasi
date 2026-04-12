@@ -1,0 +1,37 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    /* Esto es clave: Rofi puede intentar buscar iconos con el mismo nombre que el archivo */
+    icon-theme: "Adwaita"; 
+}
+
+@theme "~/.config/rofi/theme.rasi"
+
+window {
+    width: 800px;
+    height: 500px;
+}
+
+listview {
+    columns: 4;     /* Aquí defines tus 4 columnas */
+    lines: 2;
+    cycle: true;
+    layout: vertical;
+    spacing: 20px;
+    padding: 20px;
+}
+
+element {
+    orientation: vertical; /* Imagen arriba, texto abajo */
+    padding: 10px;
+    border-radius: 15px;
+}
+
+element-icon {
+    size: 150px; /* Tamaño de la miniatura */
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}
