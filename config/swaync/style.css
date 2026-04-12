@@ -151,3 +151,24 @@ scale trough {
 .widget-dnd > switch:checked slider {
     background-color: @on_primary; /* El switch cambia a color contrastado */
 }
+
+/* Estilo individual de cada botón de la rejilla */
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    background-color: @surface_container_high;
+    color: @on_surface;
+    border: 2px solid transparent;
+    border-radius: 15px;
+}
+
+/* Efecto Hover (estilo selección de Rofi) */
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background-color: alpha(@primary, 0.8);
+    color: @on_primary;
+    border: 2px solid @primary_fixed_dim;
+}
+
+/* Iconos o etiquetas dentro del botón */
+.widget-buttons-grid > flowbox > flowboxchild > button label {
+    font-size: 13px;
+    font-weight: bold;
+}

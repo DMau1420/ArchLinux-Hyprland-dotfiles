@@ -43,6 +43,7 @@
         }
     },
     "widgets": [
+	"buttons-grid",
         "mpris",
         "volume",
         "backlight",
@@ -51,6 +52,19 @@
         "notifications"
     ],
     "widget-config": {
+	"buttons-grid": {
+		"actions": [
+			{
+				"label": "󰚰 Actualizar",
+				"command": "~/.config/Scrips/actualizar.sh"
+			},
+			{
+				"label": "󰃢 Limpiar sistema",
+				"command": "~/.config/Scrips/limpiar.sh"
+			}
+
+		]
+	},
         "mpris": {
             "image-size": 50,
             "image-radius": 0
@@ -67,10 +81,10 @@
             "label": "󰃟 "
         },
         "dnd": {
-            "text": "Do Not Disturb"
+            "text": "No molestar"
         },
         "title": {
-            "text": "Notifications Center",
+            "text": "Centro de notificaciones",
             "clear-all-button": true,
             "button-text": " 󰆴 "
         }
