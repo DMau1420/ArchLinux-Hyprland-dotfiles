@@ -1,3 +1,4 @@
 #ignorar comandos incompletos o que no se requieren en el git
 copia.sh
 install.sh
+*.old
