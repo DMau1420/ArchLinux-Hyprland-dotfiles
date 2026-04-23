@@ -28,6 +28,7 @@ output_path = '~/.config/matugen/colors/spicetify.ini'
 [templates.kitty]
 input_path = '~/.config/matugen/templates/kitty.conf'
 output_path = '~/.config/kitty/current-theme.conf'
+post_hook = 'killall -USR1 kitty'
 
 [templates.wallselector]
 input_path = '~/.config/matugen/templates/wall_selector.json'
