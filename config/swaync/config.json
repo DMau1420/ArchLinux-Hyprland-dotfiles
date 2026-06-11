@@ -61,6 +61,10 @@
 			{
 				"label": "󰃢 Limpiar sistema",
 				"command": "~/.config/Scrips/limpiar.sh"
+			},
+			{
+				"label": "Waybar",
+				"command": "pkill waybar || waybar"
 			}
 
 		]
