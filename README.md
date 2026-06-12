@@ -1,25 +1,54 @@
-# Hola
-## Antes de instalar
-Es necesario tener instalado hyprland, git y preferiblemente algun navegador como firefox
+# Hyprland Ricing
+<p align="center">
+    <img src="https://readme-typing-svg.demolab.com/?lines=Hyprland+Dotfiles;By+DMau1420&center=true&width=220&height=25" alt="Typing SVG"
+</p>
+---
+This dotfiles was made for archlinux
+---
+## Dependencies
 ```
-sudo pacman -S git firefox
+kitty
+thunar
+quickshell
+waybar
+swaync
+awww
+blueberry
+poweralertd
+quickshell-overview-git
+wlogout
+hyprshot
+rofi
+hyprlock
+waypaper
+cava
+matugen
 ```
 
-![prueba2](./Wallpapers/desuwa.png)
-![prueba3](./config/fastfetch/imagen/Iuno.gif)
+### Terminals
+`kitty` + `fastfetch`
+![Terminal](./preview/terminals.png)
 
-## instalacion
-### Automatica
-```
-chmod +x install.sh
-./install.sh
-```
-Con el script install.sh Instalará automaticamente todas las dependecias y hara el movimiento de carpetas
+### AppLauncher
+`rofi`
+![Rofi](./preview/rofi.png)
 
-### Manual
-Mueve o copia cada carpeta de config del repositorio a .config, el archivo .zshrc y la carpeta Wallpapers lo vas a mover a tu carpeta /home/{user}
-```
-mv config/* ~/.config/
-mv .zshrc ~/
-mv Wallpapers ~/
-```
+### Bar & widgets
+`waybar` + `quickshell` + `quickshell-overview-git`
+![Main](./preview/main.png)
+
+### Notifications
+`swaync`
+![Noti](./preview/noticenter.png)
+
+### Logout Menu
+`wlogout`
+![wloguot](./preview/wlogout.png)
+
+### Wallpaper Selector from
+`https://github.com/iamsurjog/hyprquickpaper`
+![Wallpaper_select](./preview/wallpaper_select.png)
+
+### Automatic theme by wallpaper colors
+`matugen`
+![matugen](./preview/color_change.png)
