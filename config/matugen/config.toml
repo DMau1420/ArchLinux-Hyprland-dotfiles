@@ -33,3 +33,7 @@ post_hook = 'killall -USR1 kitty'
 [templates.wallselector]
 input_path = '~/.config/matugen/templates/wall_selector.json'
 output_path = '~/.config/quickshell/config.json'
+
+[templates.hyprlock]
+input_path = '~/.config/matugen/templates/hyprlock.conf'
+output_path = '~/.config/hypr/hyprlock/colors.conf'

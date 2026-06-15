@@ -8,8 +8,7 @@
 	//modules layout
 	"modules-left": [
 			"custom/launcher", 
-			"hyprland/workspaces",
-			"image",
+			"hyprland/workspaces"
 	],
 	"modules-center": [
 			"custom/mediaplayer", 
@@ -25,7 +24,7 @@
 			"memory", 
 			"battery", 
 			"clock",
-			"hyprland/language",
+			"hyprland/language"
 	],
 
 	//modules definition
@@ -45,12 +44,12 @@
 	
 	"cpu": {
 		"interval": 10,
-		"format": "{usage}% ",
+		"format": "{usage}% "
 	},
 
 	"memory": {
 		"interval": 10,
-		"format": "{}%  ",
+		"format": "{}%  "
 	},
 
 	"clock": {
@@ -70,28 +69,28 @@
 		"format-charging": "{capacity}% 󱐋",
 		"format-plugged": "{capacity}% 󱐥",
         	"format-icons": ["", "", "", "", ""],
-		"tooltip-format": "{timeTo}",
+		"tooltip-format": "{timeTo}"
     	},
 
 	"wireplumber": {
 		"format": "{volume}% {icon}",
 		"format-muted": " ",
 		"format-icons": [" ", " ", " "],
-		"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+		"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle"
 	},
 
 	"backlight": {
 		"device": "intel_backlight",
 		"format": "{percent} % {icon}",
 		"format-icons": ["󰃞 ", "󰃝 ", "󰃟 ", "󰃠 "],
-		"tooltip": false,
+		"tooltip": false
 	},
 
 	"custom/mediaplayer": {
 		"format": " {}",
 		"exec": "python ~/.config/Scrips/mediaplayer.py",
 		"return-type": "",
-		"min-length": 45,
+		"min-length": 45
 	},
 
 	"custom/reproducir": {
@@ -103,7 +102,7 @@
 			"Paused": "󰐊"
         	},
 		"on-click": "playerctl play-pause",
-		"tooltip": false,
+		"tooltip": false
 	},
 
 	"custom/previous": {
@@ -119,14 +118,7 @@
 	},
 
 	"tray": {
-		"spacing": 8,
-	},
-	
-
-	"image": {
-		"path": "/tmp/cover.jpeg",
-		"size": 32,
-		"interval": 5,
+		"spacing": 8
 	},
 
 	"hyprland/language": {
