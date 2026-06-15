@@ -2,9 +2,9 @@
  * Generador con matugen para waybar
 */
 
-@define-color obsidian-bg rgba(16, 19, 28, 0.85);
-@define-color obsidian-menu rgba(16, 19, 28, 0.95);
-@define-color obsidian-tooltip rgba(16, 19, 28, 0.60);
+@define-color obsidian-bg rgba(28, 17, 7, 0.85);
+@define-color obsidian-menu rgba(28, 17, 7, 0.95);
+@define-color obsidian-tooltip rgba(28, 17, 7, 0.60);
 
 @define-color cristal-border   rgba(255, 255, 255, 0.1);/* Bordes finos */
 
