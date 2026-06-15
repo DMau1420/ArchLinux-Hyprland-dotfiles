@@ -2,7 +2,7 @@
 <p align="center">
     <img src="https://readme-typing-svg.demolab.com/?lines=Hyprland+Dotfiles;By+DMau1420&center=true&width=220&height=25" alt="Typing SVG"
 </p>
----
+
 This dotfiles was made for archlinux
 ---
 ## Dependencies
