@@ -88,7 +88,7 @@
 
 	"custom/mediaplayer": {
 		"format": " {}",
-		"exec": "python ~/.config/Scrips/mediaplayer.py",
+		"exec": "python ~/.config/scripts/mediaplayer.py",
 		"return-type": "",
 		"min-length": 45
 	},

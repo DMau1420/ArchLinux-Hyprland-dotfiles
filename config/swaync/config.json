@@ -56,11 +56,11 @@
 		"actions": [
 			{
 				"label": "󰚰 Actualizar",
-				"command": "~/.config/Scrips/actualizar.sh"
+				"command": "~/.config/scripts/actualizar.sh"
 			},
 			{
 				"label": "󰃢 Limpiar sistema",
-				"command": "~/.config/Scrips/limpiar.sh"
+				"command": "~/.config/scripts/limpiar.sh"
 			},
 			{
 				"label": "Waybar",

@@ -41,7 +41,3 @@ source=hyprland/keybinds.conf
 
 # Pluggins
 source=hyprland/pluggins.conf
-
-
-monitor=eDP-2,1920x1080@144.00,-864x96,1.00
-monitor=HDMI-A-1,1920x1080@119.98,-2784x96,1.00
